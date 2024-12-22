@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     margin: 0;
     min-height: 100vh;
@@ -295,4 +296,303 @@ h1 {
 
 .policy-container li {
     margin-bottom: 8px;
+=======
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px; /* 给导航栏留出空间 */
+    padding: 20px; 
+    
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.menu {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.menu a:hover {
+    color: #007bff;
+}
+
+/* 游戏详情页样式 */
+.game-detail {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.85);  /* 半透明白色背景 */
+    backdrop-filter: blur(10px);  /* 毛玻璃效果 */
+}
+
+/* iframe游戏容器 */
+.game-container-iframe {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;  /* 16:9比例 */
+    margin: 20px 0;
+}
+
+.game-container-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* canvas游戏容器 */
+.game-container-canvas {
+    text-align: center;
+    padding: 20px;
+}
+
+.game-container-canvas canvas {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.game-info {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);  /* 半透明白色背景 */
+    /*backdrop-filter: blur(10px);*/  /* 不要毛玻璃效果 */
+}
+
+.game-info h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.game-info ul {
+    padding-left: 20px;
+    color: #666;
+}
+
+.game-info li {
+    margin: 5px 0;
+}
+
+/* 导航栏样式 */
+.navbar {
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.nav-menu a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.nav-menu a.active {
+    background-color: #3498db;
+}
+
+/* 页脚样式 */
+.footer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+}
+
+.copyright {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* 社交图标样式 */
+.social-links a {
+    margin-left: 15px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 1;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-links a {
+        margin: 0 10px;
+    }
+}
+
+/* 使用条款主要内容样式 */
+.policy-container {
+    max-width: 800px;
+    margin: 80px auto 40px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    color: #fff;
+    line-height: 1.6;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.policy-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.policy-container h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.policy-container p {
+    margin-bottom: 15px;
+}
+
+.policy-container ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.policy-container li {
+    margin-bottom: 8px;
+>>>>>>> 541b86da41df02fd29c7ff8d407a48b535c0c876
 }
